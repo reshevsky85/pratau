@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Pratau Zastępstwo</title>
+		<style>
+			body {
+				background-color: #1b1b32;
+				color: #f5f6f7;
+				font-family: "Lato", sans-serif;
+				font-weight: 700;
+				font-style: normal;
+			}
+			.content-box {
+				border: 1px solid black;
+				padding: 20px;
+				margin-top: 10px;
+				min-height: 50px7;
+			}
+
+			#myDiv1 {
+				background-color: #0a0a23;
+				border-color: rgb(63, 65, 63);
+			}
+
+			#myDiv2 {
+				background-color: #0a0a23;
+				border-color: rgb(63, 65, 63);
+			}
+
+			.hidden {
+				display: none;
+			}
+			button {
+				height: 50px;
+				width: 100px;
+				background-color: #3b3b4f;
+				border: 1px solid #f5f6f7;
+				color: #f5f6f7;
+			}
+
+			button:hover {
+				background-color: #f5f6f7;
+				color: black;
+				cursor: pointer;
+			}
+			span {
+				color: aquamarine;
+				font-weight: 900;
+				font-size: 20px;
+			}
+			li {
+				margin-bottom: 10px;
+			}
+
+			h3 {
+				margin-top: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Pratau</h1>
+		<button id="toggleButton1">Magda</button>
+		<div id="myDiv1" class="content-box hidden">
+			<p>Oils:</p>
+			<ul>
+				<li>1044558 F&O Palm oil SG -</li>
+				<li>91101968/91101280 F&O HS erES148 RFA/F&O HS erES148 -</li>
+				<li>91100730 F&O HS erES130 SF -</li>
+				<li>91100760 F&O HS erES80 SG pressed -</li>
+				<li>91101741 F&O MIX inES30 SG_inES44 SG 71_29 -</li>
+			</ul>
+		</div>
+
+		<hr />
+		<button id="toggleButton2">Szymon</button>
+		<div id="myDiv2" class="content-box hidden">
+			<p>Oils:</p>
+			<ul>
+				<li>
+					1044578 Rapeseed - Order when there is 60t on stock + always order 3
+					safety stocks for VDB
+				</li>
+				<li>
+					1044587 Sunflower - Order when there is 50t on stock. Book slots on
+					Alpega site - details on our site
+				</li>
+				<li>
+					388212 Coconut - Order 1 day before out of stock, only
+					<span>VDB</span> because there is 1 tank only (27t)
+				</li>
+				<li>
+					91101963 LNSF - Order when there is 25t on stock. Sent orders on
+					<span>Tuesday</span> to Cargill
+				</li>
+			</ul>
+		</div>
+		<h3>-> Main Contact: Manuela Piper.</h3>
+		<h3>-> Logistics: Natalia Trzeciak.</h3>
+		<h3>-> Calls with Pratau everyday at 10ham.</h3>
+		<h3>-> Plant: 1011.</h3>
+		<h3>
+			-> VDB: ask him for loading dates on Tuesday (Transit Time 2 days
+			minimum).
+		</h3>
+		<h3>
+			-> Road: order according to transit times (24hrs for most of the
+			locations).
+		</h3>
+		<h3>
+			-> Stock Build SD - ERES OILS
+			<a
+				href="https://login.microsoftonline.com/e361356b-0fd2-4625-86f0-22ae6904a721/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=97F9F15AC232C3BB327AC25809B5D1B614EE4CD052448113%2D65F447E25AF0D33CF69DBB02B58D25699777D264E457B39E599709F9DF0FBB70&redirect%5Furi=https%3A%2F%2Fupfieldbrands%2Dmy%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=ae8b99a1%2De099%2Dc000%2Dbb7b%2D12406f7f2839&sso_reload=true"
+				>Link Excel</a
+			>
+		</h3>
+		<script src="app.js"></script>
+	</body>
+</html>
