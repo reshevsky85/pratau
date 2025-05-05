@@ -55,11 +55,27 @@
 				font-size: 20px;
 			}
 			li {
-				margin-bottom: 10px;
+				margin-bottom: 20px;
 			}
 
 			h3 {
 				margin-top: 30px;
+			}
+
+			#div {
+				max-width: fit-content;
+				margin-left: auto;
+				margin-right: auto;
+				color: red;
+				font-size: 25px;
+			}
+
+			#span {
+				background-color: beige;
+				color: #0a0a23;
+				padding: 5px 10px;
+				border-radius: 5%;
+				font-size: 15px;
 			}
 		</style>
 	</head>
@@ -69,7 +85,7 @@
 		<div id="myDiv1" class="content-box hidden">
 			<p>Oils:</p>
 			<ul>
-				<li>1044558 F&O Palm oil SG -</li>
+				<li>span1044558 F&O Palm oil SG -</li>
 				<li>91101968/91101280 F&O HS erES148 RFA/F&O HS erES148 -</li>
 				<li>91100730 F&O HS erES130 SF -</li>
 				<li>91100760 F&O HS erES80 SG pressed -</li>
@@ -83,20 +99,21 @@
 			<p>Oils:</p>
 			<ul>
 				<li>
-					1044578 Rapeseed - Order when there is 60t on stock + always order 3
-					safety stocks for VDB
+					<span id="span">1044578 Rapeseed </span>- Order when there is 60t on
+					stock + always order 3 safety stocks for VDB (Road + 3 VDB)
 				</li>
 				<li>
-					1044587 Sunflower - Order when there is 50t on stock. Book slots on
-					Alpega site - details on our site
+					<span id="span">1044587 Sunflower</span> - Order when there is 50t on
+					stock. Book slots on Alpega site - details on our site (Only Roads)
 				</li>
 				<li>
-					388212 Coconut - Order 1 day before out of stock, only
-					<span>VDB</span> because there is 1 tank only (27t)
+					<span id="span">388212 Coconut</span> - Order 1 day before out of
+					stock, only <span>VDB</span> because there is 1 tank only (27t) (only
+					VDB)
 				</li>
 				<li>
-					91101963 LNSF - Order when there is 25t on stock. Sent orders on
-					<span>Tuesday</span> to Cargill
+					<span id="span">91101963 LNSF</span> - Order when there is 25t on
+					stock. Sent orders on <span>Tuesday</span> to Cargill (Road + VDB)
 				</li>
 			</ul>
 		</div>
@@ -116,6 +133,8 @@
 			-> Stock Build SD - ERES OILS
 			<a href="Stock Build SD.xlsx">Link Excel</a>
 		</h3>
+
+		<div id="div"><h2>SATURDAYS AND SUNDAYS - NO DELIVERIES</h2></div>
 		<script src="app.js"></script>
 	</body>
 </html>
