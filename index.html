@@ -50,7 +50,7 @@
         cursor: pointer;
       }
       span {
-        color: aquamarine;
+        color: #38598b;
         font-weight: 900;
         font-size: 20px;
       }
@@ -71,8 +71,8 @@
       }
 
       #span {
-        background-color: beige;
-        color: #0a0a23;
+        background-color: #38598b;
+        color: #38598b;
         padding: 5px 10px;
         border-radius: 5%;
         font-size: 15px;
@@ -92,71 +92,147 @@
       #image {
         margin-left: 100px;
       }
+      table {
+        /* width: 70%; */
+        /* margin: auto; */
+        border-collapse: collapse;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #a2a8d3;
+        color: rgb(241, 230, 230);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      tr:nth-child(even) {
+        background-color: #e7eaf6;
+      }
+
+      tr:hover {
+        background-color: #282850;
+        transition: background-color 0.3s ease;
+      }
+
+      td {
+        color: #4da8da;
+        border-bottom: 1px solid #d9e6ec;
+      }
     </style>
   </head>
   <body>
     <h1>Pratau</h1>
     <button id="toggleButton1">Magda</button>
     <div id="myDiv1" class="content-box hidden">
-      <p>Oils:</p>
-      <ul>
-        <li>
-          <span id="span">1044558 Palm oil SG</span> - Only VDB as there is only
-          1 tank (27t). Transit time minimum 2 days.
-        </li>
-        <li>
-          <span id="span">91101968/91101280 erES148 RFA/erES148</span>
-          - 50/50 Road vs Intermodal. Transit time 24h Road and 48h Intermodal.
-        </li>
-        <li>
-          <span id="span">91100730 erES130 SF</span> - 50/50 Road vs Intermodal.
-          Transit time 24h Road and 48h Intermodal.
-        </li>
-
-        <li>
-          <span id="span">91101741 MIX inES30 SG_inES44 SG 71_29</span> - Order
-          small quantities as production is not big and only 1 tank available.
-          Order min. 15t for VDB. Transit time 24h Road and 48h Intermodal.
-        </li>
-        <li>
-          <span id="span">1044578 Rapeseed</span> - Order when there is 60t on
-          stock + always order 3 safety stocks for VDB (Road + 3 VDB) - kończysz
-          ze stokiem 100-150t.
-        </li>
-        <li>
-          <span id="span">1044577 pressed Rapeseed</span> - Oil from
-          Helsingborg. Productions in wk34 and wk36. Ask Peggy for requirements
-          for wk36, than plan deliveries and create STOs and ask Natalia for
-          loadings, finally send it to Johan Johnsson. Ask for documents after
-          collections and send documents to Pratau operators (contact below)
-        </li>
-      </ul>
+      <table>
+        <tr>
+          <th>Oil Number</th>
+          <th>Oil Name</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>1044558</td>
+          <td>Palm oil SG</td>
+          <td>
+            Only VDB as there is only 1 tank (27t). Transit time minimum 2 days
+          </td>
+        </tr>
+        <tr>
+          <td>91101280</td>
+          <td>erES148</td>
+          <td>
+            50/50 Road vs Intermodal. Transit time 24h Road and 48h Intermodal.
+          </td>
+        </tr>
+        <tr>
+          <td>91100730</td>
+          <td>erES130 SF</td>
+          <td>
+            50/50 Road vs Intermodal. Transit time 24h Road and 48h Intermodal.
+          </td>
+        </tr>
+        <tr>
+          <td>91101741</td>
+          <td>MIX inES30 SG_inES44</td>
+          <td>
+            Order small quantities as production is not big and only 1 tank
+            available. Order min. 15t for VDB. Transit time 24h Road and 48h
+            Intermodal.
+          </td>
+        </tr>
+        <tr>
+          <td>1044578</td>
+          <td>Rapeseed</td>
+          <td>
+            Order when there is 60t on stock + always order 3 safety stocks for
+            VDB (Road + 3 VDB) - kończysz ze stokiem 100-150t.
+          </td>
+        </tr>
+        <tr>
+          <td>1044577</td>
+          <td>pressed Rapeseed</td>
+          <td>
+            Oil from Helsingborg. Productions in wk34 and wk36. Ask Peggy for
+            requirements for wk36, than plan deliveries and create STOs and ask
+            Natalia for loadings, finally send it to Johan Johnsson. Ask for
+            documents after collections and send documents to Pratau operators
+            (contact below)
+          </td>
+        </tr>
+      </table>
     </div>
     <hr />
     <button id="toggleButton2">Szymon</button>
     <div id="myDiv2" class="content-box hidden">
-      <p>Oils:</p>
-      <ul>
-        <li>
-          <span id="span">91100760 erES80 SG pressed</span> - 50/50 Road vs
-          Intermodal. Transit time 24h Road and 48h Intermodal.
-        </li>
-        <li>
-          <span id="span">1044587 Sunflower</span> - Order when there is 50t on
-          stock. Book slots on Alpega site - details on our site (Only Roads) -
-          kończysz ze stokiem 50t lub wtorek włącznie.
-        </li>
-        <li>
-          <span id="span">388212 Coconut</span> - Order 1 day before out of
-          stock, only <span>VDB</span> because there is 1 tank only (27t) (only
-          VDB) - pokrycie do środy włącznie.
-        </li>
-        <li>
-          <span id="span">91101963 LNSF</span> - Order when there is 25t on
-          stock. Sent orders on <span>Tuesday</span> to Cargill (Road + VDB) -
-          pokrycie do wtorku włącznie.
-        </li>
-      </ul>
+      <table>
+        <tr>
+          <th>Oil Number</th>
+          <th>Oil Name</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>91100760</td>
+          <td>erES80 SG pressed</td>
+          <td>
+            50/50 Road vs Intermodal. Transit time 24h Road and 48h Intermodal.
+          </td>
+        </tr>
+        <tr>
+          <td>1044587</td>
+          <td>Sunflower</td>
+          <td>
+            Order when there is 50t on stock. kończysz ze stokiem 50t lub
+            pokrycie wtorek włącznie.
+          </td>
+        </tr>
+        <tr>
+          <td>388212</td>
+          <td>Coconut</td>
+          <td>
+            Order 1 day before out of stock, only <span>VDB</span> because there
+            is 1 tank only (27t) (only VDB) - pokrycie do środy włącznie.
+          </td>
+        </tr>
+        <tr>
+          <td>91101963</td>
+          <td>LNSF</td>
+          <td>
+            Order when there is 25t on stock. Sent orders on
+            <span>Tuesday</span> to Cargill (Road + VDB) - pokrycie do wtorku
+            włącznie.
+          </td>
+        </tr>
+      </table>
     </div>
     <div id="central">
       <div>
