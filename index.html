@@ -1,170 +1,188 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Pratau Zastępstwo</title>
-		<style>
-			body {
-				background-color: #1b1b32;
-				color: #f5f6f7;
-				font-family: "Lato", sans-serif;
-				font-weight: 700;
-				font-style: normal;
-			}
-			.content-box {
-				border: 1px solid black;
-				padding: 20px;
-				margin-top: 10px;
-				min-height: 50px7;
-			}
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pratau Zastępstwo</title>
+    <style>
+      body {
+        background-color: #1b1b32;
+        color: #f5f6f7;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .content-box {
+        border: 1px solid black;
+        padding: 20px;
+        margin-top: 10px;
+        min-height: 50px7;
+      }
 
-			#myDiv1 {
-				background-color: #0a0a23;
-				border-color: rgb(63, 65, 63);
-			}
+      #myDiv1 {
+        background-color: #0a0a23;
+        border-color: rgb(63, 65, 63);
+      }
 
-			#myDiv2 {
-				background-color: #0a0a23;
-				border-color: rgb(63, 65, 63);
-			}
+      #myDiv2 {
+        background-color: #0a0a23;
+        border-color: rgb(63, 65, 63);
+      }
 
-			.hidden {
-				display: none;
-			}
-			button {
-				height: 50px;
-				width: 100px;
-				background-color: #3b3b4f;
-				border: 1px solid #f5f6f7;
-				color: #f5f6f7;
-			}
+      .hidden {
+        display: none;
+      }
+      button {
+        height: 50px;
+        width: 100px;
+        background-color: #3b3b4f;
+        border: 1px solid #f5f6f7;
+        color: #f5f6f7;
+      }
 
-			button:hover {
-				background-color: #f5f6f7;
-				color: black;
-				cursor: pointer;
-			}
-			span {
-				color: aquamarine;
-				font-weight: 900;
-				font-size: 20px;
-			}
-			li {
-				margin-bottom: 20px;
-			}
+      button:hover {
+        background-color: #f5f6f7;
+        color: black;
+        cursor: pointer;
+      }
+      span {
+        color: aquamarine;
+        font-weight: 900;
+        font-size: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
 
-			h3 {
-				margin-top: 30px;
-			}
+      h3 {
+        margin-top: 30px;
+      }
 
-			#div {
-				max-width: fit-content;
-				margin-left: auto;
-				margin-right: auto;
-				color: red;
-				font-size: 25px;
-			}
+      #div {
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        color: red;
+        font-size: 25px;
+      }
 
-			#span {
-				background-color: beige;
-				color: #0a0a23;
-				padding: 5px 10px;
-				border-radius: 5%;
-				font-size: 15px;
-			}
+      #span {
+        background-color: beige;
+        color: #0a0a23;
+        padding: 5px 10px;
+        border-radius: 5%;
+        font-size: 15px;
+      }
+      #span2 {
+        background-color: rgba(122, 236, 236, 0.788);
+        color: #0a0a23;
+        padding: 5px 10px;
+        border-radius: 5%;
+        font-size: 15px;
+      }
 
-			#central {
-				display: flex;
-			}
+      #central {
+        display: flex;
+      }
 
-			#image {
-				margin-left: 100px;
-			}
-		</style>
-	</head>
-	<body>
-		<h1>Pratau</h1>
-		<button id="toggleButton1">Magda</button>
-		<div id="myDiv1" class="content-box hidden">
-			<p>Oils:</p>
-			<ul>
-				<li>
-					<span id="span">1044558 Palm oil SG</span> - Only VDB as there is only
-					1 tank (27t). Transit time minimum 2 days.
-				</li>
-				<li>
-					<span id="span">91101968/91101280 erES148 RFA/erES148</span>
-					- 50/50 Road vs Intermodal. Transit time 24h Road and 48h Intermodal.
-				</li>
-				<li>
-					<span id="span">91100730 erES130 SF</span> - 50/50 Road vs Intermodal.
-					Transit time 24h Road and 48h Intermodal.
-				</li>
-				<li>
-					<span id="span">91100760 erES80 SG pressed</span> - 50/50 Road vs
-					Intermodal. Transit time 24h Road and 48h Intermodal.
-				</li>
-				<li>
-					<span id="span">91101741 MIX inES30 SG_inES44 SG 71_29</span> - Order
-					small quantities as production is not big and only 1 tank available.
-					Order min. 15t for VDB. Transit time 24h Road and 48h Intermodal.
-				</li>
-			</ul>
-		</div>
-		<hr />
-		<button id="toggleButton2">Szymon</button>
-		<div id="myDiv2" class="content-box hidden">
-			<p>Oils:</p>
-			<ul>
-				<li>
-					<span id="span">1044578 Rapeseed</span> - Order when there is 60t on
-					stock + always order 3 safety stocks for VDB (Road + 3 VDB) - kończysz
-					ze stokiem 100-150t.
-				</li>
-				<li>
-					<span id="span">1044587 Sunflower</span> - Order when there is 50t on
-					stock. Book slots on Alpega site - details on our site (Only Roads) -
-					kończysz ze stokiem 50t lub wtorek włącznie.
-				</li>
-				<li>
-					<span id="span">388212 Coconut</span> - Order 1 day before out of
-					stock, only <span>VDB</span> because there is 1 tank only (27t) (only
-					VDB) - pokrycie do środy włącznie.
-				</li>
-				<li>
-					<span id="span">91101963 LNSF</span> - Order when there is 25t on
-					stock. Sent orders on <span>Tuesday</span> to Cargill (Road + VDB) -
-					pokrycie do wtorku włącznie.
-				</li>
-			</ul>
-		</div>
-		<div id="central">
-			<div>
-				<h3>-> Main Contact: Manuela Piper.</h3>
-				<h3>-> Logistics: Natalia Trzeciak.</h3>
-				<h3>-> Calls with Pratau everyday at 10ham.</h3>
-				<h3>-> Plant: 1011.</h3>
-				<h3>
-					-> VDB: ask him for loading dates on Tuesday (Transit Time 2 days
-					minimum).
-				</h3>
-				<h3>
-					-> Road: order according to transit times (24hrs for most of the
-					locations).
-				</h3>
-			</div>
-			<div id="image">
-				<h2>CARGILL Deadline</h2>
-				<img src="cargill.JPG" alt="" />
-			</div>
-		</div>
+      #image {
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pratau</h1>
+    <button id="toggleButton1">Magda</button>
+    <div id="myDiv1" class="content-box hidden">
+      <p>Oils:</p>
+      <ul>
+        <li>
+          <span id="span">1044558 Palm oil SG</span> - Only VDB as there is only
+          1 tank (27t). Transit time minimum 2 days.
+        </li>
+        <li>
+          <span id="span">91101968/91101280 erES148 RFA/erES148</span>
+          - 50/50 Road vs Intermodal. Transit time 24h Road and 48h Intermodal.
+        </li>
+        <li>
+          <span id="span">91100730 erES130 SF</span> - 50/50 Road vs Intermodal.
+          Transit time 24h Road and 48h Intermodal.
+        </li>
 
-		<div id="div"><h2>SATURDAYS AND SUNDAYS - NO DELIVERIES</h2></div>
-		<script src="app.js"></script>
-	</body>
+        <li>
+          <span id="span">91101741 MIX inES30 SG_inES44 SG 71_29</span> - Order
+          small quantities as production is not big and only 1 tank available.
+          Order min. 15t for VDB. Transit time 24h Road and 48h Intermodal.
+        </li>
+        <li>
+          <span id="span">1044578 Rapeseed</span> - Order when there is 60t on
+          stock + always order 3 safety stocks for VDB (Road + 3 VDB) - kończysz
+          ze stokiem 100-150t.
+        </li>
+        <li>
+          <span id="span">1044577 pressed Rapeseed</span> - Oil from
+          Helsingborg. Productions in wk34 and wk36. Ask Peggy for requirements
+          for wk36, than plan deliveries and create STOs and ask Natalia for
+          loadings, finally send it to Johan Johnsson. Ask for documents after
+          collections and send documents to Pratau operators (contact below)
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <button id="toggleButton2">Szymon</button>
+    <div id="myDiv2" class="content-box hidden">
+      <p>Oils:</p>
+      <ul>
+        <li>
+          <span id="span">91100760 erES80 SG pressed</span> - 50/50 Road vs
+          Intermodal. Transit time 24h Road and 48h Intermodal.
+        </li>
+        <li>
+          <span id="span">1044587 Sunflower</span> - Order when there is 50t on
+          stock. Book slots on Alpega site - details on our site (Only Roads) -
+          kończysz ze stokiem 50t lub wtorek włącznie.
+        </li>
+        <li>
+          <span id="span">388212 Coconut</span> - Order 1 day before out of
+          stock, only <span>VDB</span> because there is 1 tank only (27t) (only
+          VDB) - pokrycie do środy włącznie.
+        </li>
+        <li>
+          <span id="span">91101963 LNSF</span> - Order when there is 25t on
+          stock. Sent orders on <span>Tuesday</span> to Cargill (Road + VDB) -
+          pokrycie do wtorku włącznie.
+        </li>
+      </ul>
+    </div>
+    <div id="central">
+      <div>
+        <h3>
+          -> <span id="span2">Main Contact:</span> Manuela Piper, Peggy Hess
+        </h3>
+        <h3>
+          ->
+          <span id="span2">Contact Operators:</span>
+          raffinatannahme.fpr@upfield.com
+        </h3>
+        <h3>-> <span id="span2">Logistics:</span> Natalia Trzeciak.</h3>
+        <h3>-> Calls with Pratau everyday at 11ham.</h3>
+        <h3>-> <span id="span2">Plant:</span> 1011.</h3>
+        <h3>
+          -> <span id="span2">VDB:</span> ask him for loading dates on Tuesday
+          (Transit Time 2 days minimum).
+        </h3>
+        <h3>
+          -> <span id="span2">Road:</span> order according to transit times
+          (24hrs for most of the locations).
+        </h3>
+      </div>
+    </div>
+
+    <div id="div"><h2>SATURDAYS AND SUNDAYS - NO DELIVERIES</h2></div>
+    <script src="app.js"></script>
+  </body>
 </html>
